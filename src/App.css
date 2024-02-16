@@ -1,45 +1,76 @@
+/* HomePage.css */
+:root {
+  --baseColor: #191919;
+  --baseFontColor: white;
+  --baseColorLight: #2e2e2e;
+  --fontDark: #999999;
+  --btnPrimaryColor: #019963;
+}
+
 .Home {
-  background-color: #404249;
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  .sticky-header {
-    color: #04aa6d;
-    height: 100px;
-    display: flex;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-  .due-amount {
-    padding-left: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  .text-green {
-    cursor: pointer;
-    color: #04aa6d;
-    text-decoration: underline;
-  }
-  .transaction-history {
-    padding-top: 20px;
-    padding-left: 20px;
-    background-color: #202124;
-    height: 100%;
-    color: #c3c6d6;
-    display: flex;
-    justify-content: center;
-    .transaction-details {
-      display: flex;
-      align-items: center;
-      .transaction-day,
-      .transaction-type,
-      .transaction-info {
-        margin-right: 20px;
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh; /* Adjust as needed */
+  background-color: var(--baseColor);
+  color: var(--baseFontColor);
+  font-family: Inter;
+  font-size: 14px;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.font-large {
+  font-size: 22px;
+}
+
+.text-dimmed {
+  color: var(--fontDark) !important;
+}
+
+.sticky-header {
+  width: 100%;
+  background-color: var(--baseColor);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hyperlink {
+  cursor: pointer;
+}
+
+.input-div {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--baseColorLight);
+  padding-left: 20px;
+  color: var(--baseFontColor);
+}
+.text-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #019963;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
